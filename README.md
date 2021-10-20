@@ -13,15 +13,27 @@
     - [Foam](https://github.com/foambubble/foam) is a Roam based VSCode extension.
     - Don't allow linking to subsections of a Zettel. A Zettel should be atomic and KISS.
 - Editor.
-    - Reuse what exists, keep it simple.
-    - The editor should not be the focus of this project.
     - The system should be usable even when limited to only sending text messages to your Zettelkasten.
     - The system should feel as plastic and haptic as possible.
     - [VSCode](https://code.visualstudio.com/) is a dekstop and web supported text-editor with extensions.
     - [Zettlr](https://github.com/Zettlr/Zettlr) is a desktop-only TypeScript based Zettelkasten enabled Markdown note-taking app.
-    - [Joplin](https://github.com/laurent22/joplin/) is a web-mobile-desktop TypeScript-based note taking app with paid syncing options. [Standard Notes](https://github.com/standardnotes) seems similar but a bit worse.
+    - [Joplin](https://github.com/laurent22/joplin/) is a web-mobile-desktop TypeScript-based note taking app with paid syncing options. [Standard Notes](https://github.com/standardnotes) seems similar but a bit worse. Joplin has a [plugin](https://github.com/joplin/plugins) repository with some Zettelkasten and flash card related functions.
+        - A graph visualization of the connectome of notes is given [here](https://github.com/treymo/joplin-link-graph).
+        - Backlinks, listing all references to a current note, is supported [here](https://github.com/ambrt/joplin-plugin-referencing-notes). The functionality is explained [here](https://discourse.joplinapp.org/t/automatic-backlinks-with-manual-insert-option/13632).
+        - [Exporting notes](https://github.com/BartBucknill/joplin-to-anki) with Q/A pairs to [Anki](https://github.com/ankitects/anki) for flash card functionality.
+        - Automatically recognizing possible references in a note to other notes and creating links, [here](https://github.com/S73ph4n/joplin_make_all_links).
+        - Quickly linking notes by their title, on [GitHub](https://github.com/roman-r-m/joplin-plugin-quick-links), discussion [here](https://discourse.joplinapp.org/t/quick-links-plugin/14214). [This](https://github.com/S73ph4n/joplin_complete_link) plugin does something similar. And [this](https://github.com/S73ph4n/joplin_autolinker) plugin also.
+        - Multiple [note tabs](https://github.com/benji300/joplin-note-tabs).
+        
     - [FSNotes](https://github.com/glushchenko/fsnotes) is a iOS and Mac only note taking app in Swift.
     - 3D representation and VR with the Zettelkasten.
+- UI.
+    - The UI is a key component.
+    - Touch optimized.
+    - Keyboard optimized.
+    - Expand on horizontal stacking for multiple Zettel as in Obsidian.
+        - Freedom of [i3wm](https://i3wm.org/).
+    - Natural flow between one viewing mode into the other. 
 - Export and import to and from many formats.
     - Import from a collection of .md files such as maintained with Obsidian.
     - Import from a loose collection of data .odt, .doc, docx. Use NLP and clustering for creating Zettel.
@@ -47,6 +59,7 @@
     - Active recall learning with spaced repetition on a subset of Zettel.
 - Blogging: Support for publishing a collection of Zettel to the web.
     - See this [example](https://alien-psychology.zettel.page/) generated from notes about a TV-show using the Neuron app.
+    - See this [example](https://publish.obsidian.md/myquantumwell/Welcome+to+The+Quantum+Well!) generated from Obsidian publish.
 - Search and filtering.
     - Test multiple search algorithms.
     - Strive for something like Google's MUM: Multimodal search with for example auto-generated labels for images in a Zettel.
@@ -61,7 +74,8 @@
     - Receive news from (1) manually selected and filtered Zettel (2) most recent Zettel (3) most connected Zettel (4) most referencing Zettel (5) most referenced Zettel.
     - Automatic Zettel creation from a news article using AI an generated modifiable summary. Includes automatic reference to article.
 - Multi-modal data support: vector-graphics-canvas, text, 2D images, 3D images, latex, code, audio, 2D video, 3D videos.
-    - In the long run, code execution for many programming languages could be possible with WebAssembly.
+    - In the long run, code execution for many programming languages could be possible with WebAssembly. In the short term remote code execution could be offered as a service. 
+    - To integrate sketching see [Excalidraw](https://github.com/excalidraw/excalidraw).
     - AI tools to generate multi-modal. For example automatic transcription of voice recordings.
     - Integrate arbitrary external documents.
         - Example: Allow loading a paper's full PDF into the database. Clicking on a reference then opens the PDF.
@@ -84,9 +98,34 @@
     - Centralized synching as a service.
     - Centralized synchronization via external Clouds such as Nextcloud, Dropbox, Google Drive, iCloud, OneDrive.
     - Local syncing via [Syncthing](https://github.com/syncthing/syncthing).
+- Reconstruction.
+    - You only learnt about the Zettelkasten after finishing university. How to add everything?
+    - You text people great ideas. But this was all before the Zettelkasten. How to aggregate it all?
 - Grammatical note: In German's Nominative case it's "1 Zettel, 2 Zettel" but English doesn't have cases and "1 Zettel, 2 Zettels" sounds kind of natural in English.
+- AI-it-up.
+    - Sentiment analysis.
+    - NLP.
+    - Text completion aid.
+    - Text regularization by recognizing patters. For example aligning year_month and month_year occurrences into one.
+- Questions
+    - Labels and folders?
+        - Are they really good or are they a bad idea?
+        - There is a natural tendency to want to use folders.
+        - There is a natural tendency to want to use labels.
+        - But why wouldn't that just be represented by nodes?
+            - Example: A label for your linear-algebra course?
+            - The advantage: allows focusing on a specific set of nodes that can otherwise not as easily be selected. Do we want to link each node related to the course to the main topic? No we don't. We don't want to have to link matrix-multiplication to linear algebra. It's already connected to matrices which in turn are connected to linear algebra. Or maybe there is something here about path length enabled filtering that is superior to labels, because technically it would be more atomic and minimalistic to avoid labels/tags. Or if tags are implemented, then that they are just syntactic sugar around actually just a link to an existing Zettel.
+    - Links to sections within a Zettel, for example referring to second subheading?
+        - Con: this encourages large Zettels
+        - A Zettel should be 1-3 questions and one coherent answer
+        - Pro: Obsidian supports this and it doesn't feel too bad.
+        - Discussion: Sub-linking could encourage writing reports and essays inside the Zettelkasten. Of course, it's possible to write big documents inside the Zettelkasten without sub-linkink. However such documents should be an aggregation and therefore reference a lot instead of being sources and therefore being referenced a lot.
+- Decentralized governance and infrastructure.
+    - Use [Filecoin (FIL)](https://filecoin.io/) and [IPFS](https://ipfs.io/) for storage.
+    - Use [Internet Computer (ICP)](https://dfinity.org/) for compute.
+    - Use [The Graph (GRT)](https://thegraph.com/en/) for indexing.
 
-## Conclusion
+## Conclusion 
 
 Either make plugins for Joplin because it's open source and cross-platform. This gives independence to develop the features next to Joplin. Or use a script like [this](https://gitlab.com/annyong/baeuda) to generate flash cards. Do plugins work on mobile?
 
