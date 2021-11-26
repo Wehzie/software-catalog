@@ -10,6 +10,7 @@
     - A [Java](http://zettelkasten.danielluedecke.de/) implementation of the Zettelkasten with an old-school user interface.
     - [Neuron](https://github.com/srid/neuron), a Haskell implementation. Very cool project, also uses [Nix](https://nixos.org/) and [Matrix](https://matrix.org/). [Emanote](https://github.com/srid/emanote), a currently, seemingly, less popular successor to Neuron by the same author.
     - [Obsidian](https://obsidian.md/) is a proprietary, cross-platform, markdown-based note taking tool. With a focus on cross-references and building a knowledge graph it's similar to the Zettelkasten. Other similar proprietary apps are [Notion](https://www.notion.so/) (client is open source), [Roam Research](https://roamresearch.com/), [RemNote](https://www.remnote.com/) with support for flash cards.
+    - [AppFlowy.IO](https://github.com/AppFlowy-IO/appflowy) is a Notion clone. The tech stack is in Rust and Dart/Flutter. The project is in early development as of November 2021 but gaining popularity rapidly with over 8k stars on GitHub. The project is open source and AGPL-3 licensed. This could be the most promising project in the future. Due to Flutter multi platform comes per default.
     - [Foam](https://github.com/foambubble/foam) is a Roam based VSCode extension.
     - Don't allow linking to subsections of a Zettel. A Zettel should be atomic and KISS.
 - Editor.
@@ -93,6 +94,11 @@
     - VR will grow a lot in the future.
     - Remove tradeoffs between the physical and the digital Zettelkasten.
     - Visualizations and knowledge in the 3D dimension are more comprehensive.
+    - Needs a game engine.
+        - [Godot](https://godotengine.org/) on [GitHub](https://github.com/godotengine/godot). An [article](https://godotengine.org/article/why-isnt-godot-ecs-based-game-engine) about why it isn't Entity Component System (ECS) based.
+        - [Unity](https://unity.com/de) seems the most fully featured and advanced game engine.
+    - WebGL supports XR via the [WebXR Device API](https://www.w3.org/TR/webxr/)
+    - Tradeoffs between 3D, 2D and speech/audio interactions and views, [paper](https://www.sciencedirect.com/science/article/abs/pii/S0097849319300974), [doi](https://doi.org/10.1016/j.cag.2019.06.003).
 - An advanced app could be in Dart/[Flutter](https://flutter.dev/) targeting mobile, desktop, web.
 - Cross-platform and synchronized.
     - Centralized synching as a service.
@@ -124,6 +130,20 @@
     - Use [Filecoin (FIL)](https://filecoin.io/) and [IPFS](https://ipfs.io/) for storage.
     - Use [Internet Computer (ICP)](https://dfinity.org/) for compute.
     - Use [The Graph (GRT)](https://thegraph.com/en/) for indexing.
+- Multi-view read and write
+    - For example write flash card -> it's inside a linear text -> it's inside a Zettel
+    - Write a Zettel -> it's a flash card -> it's inside a linear text or summary
+    - Write a summary or linear text -> it's converted to atomic Zettels -> it's converted to flash cards
+- What file saving model?
+    - One file dump?
+    - Files per zettel?
+    - folder per zettel?
+- How to make links?
+    - Numbers
+    - ids
+    - names
+    - how to reference other nodes and how to be referenced
+- Feature: an ordered list by how incomplete notes seem
 
 ## Conclusion 
 
