@@ -144,6 +144,7 @@
     - names
     - how to reference other nodes and how to be referenced
 - Feature: an ordered list by how incomplete notes seem
+- An example of powerful Obsidian usage is given by [Ryan Murphy](https://twitter.com/ryanjamurphy), a PhD in management. Ryan uses Obsidian on an iPad. ["How to Design Your Obsidian app as an Integrated Thinking Environment | LYT House Episode 5"](https://www.youtube.com/watch?v=fhkwEgGFOg8). More on [Fulcra](https://fulcra.design/tagged/projects), Ryan's project website. His use case is related to cybernetics and control theory, see [Stafford Beer](https://de.wikipedia.org/wiki/Stafford_Beer), see ["Cybernetic Revolutionaries"](https://mitpress.mit.edu/books/cybernetic-revolutionaries#:~:text=Summary-,A%20historical%20study%20of%20Chile's%20twin%20experiments%20with%20cybernetics%20and,one%20political%20and%20one%20technological.) by Eden Medina.
 
 ## Conclusion 
 
