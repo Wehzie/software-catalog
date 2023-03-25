@@ -1,6 +1,257 @@
-# Multimodal Zettelkasten (Mumoz)
+    Finance:
+        Rotki:
+            https://rotki.com/#download
+            
+        OpenBBTerminal:
+            https://openbb.co/
+            
+        MoneyManagerEx or Firefly III
+            https://moneymanagerex.org/
+            https://www.firefly-iii.org/
 
-## Features
+    Text Processing:
+        LaTeX:
+
+            Linux, TeX Live:
+                https://tug.org/texlive/quickinstall.html
+                # installation via tug preferable over outdated APT packages on Debian distros
+
+
+            Windows, MiKTeX:
+            https://miktex.org/
+
+        LibreOffice:
+            https://www.libreoffice.org/
+            
+    Learning Software:
+        Anki
+            https://apps.ankiweb.net/
+
+        Plugins:
+            Image occlusion enhanced, https://github.com/glutanimate/image-occlusion-enhanced
+            Anki Connect, https://github.com/FooSoft/anki-connect
+            Obsidian to Anki, https://github.com/Pseudonium/Obsidian_to_Anki
+
+        Memcode
+            https://www.memcode.com/
+
+    Information Organization:
+        Obsidian
+            https://obsidian.md/
+            
+                Plugins:
+                    Excalidraw, https://www.zsolt.blog/2021/03/showcasing-excalidraw.html
+                    Obsidian to Anki, https://github.com/Pseudonium/Obsidian_to_Anki
+                    Obsidian Git, https://github.com/denolehov/obsidian-git
+            
+                Alernatives:
+                appflowy
+                    https://www.appflowy.io/
+                
+                joplin
+                    https://joplinapp.org/
+                
+                LogSeq
+                    https://github.com/logseq/logseq
+                    
+                GitJournal
+                    https://github.com/GitJournal/GitJournal
+            
+        Zotero
+            https://www.zotero.org/
+            
+            Plugins:
+                BETTER BIBTEX FOR ZOTERO
+                    https://retorque.re/zotero-better-bibtex/
+            
+            Settings:		
+                Citation Key	
+                    auth.lower + year + veryshorttitle.lower
+
+                File name format for PDFs to year-author-title
+                    extensions.zotero.attachmentRenameFormatString
+                    {%y - }{%c - }{%t{50}}
+        
+            Alternative:
+                JabRef
+                    https://www.jabref.org/
+        
+    Visualization Software:
+        diagrams.net (previously draw.io)
+        https://www.diagrams.net/
+
+        Markmap
+            https://github.com/gera2ld/markmap
+        
+        Freeplane
+            https://www.freeplane.org/wiki/index.php/Home
+            
+        Xournal++
+            https://github.com/xournalpp/xournalpp
+
+    Creative Software:
+        Krita:
+            https://krita.org/en/
+            
+        Pinta:
+            https://www.pinta-project.com/
+
+        Excalidraw:
+            https://excalidraw.com/
+            
+        Inkscape:
+            https://inkscape.org/de/
+
+        Kroki:
+            https://kroki.io/
+
+        Kdenlive:
+            https://kdenlive.org/en/
+
+        LMMS:
+            https://lmms.io/
+
+        MuseScore:
+            https://musescore.org/
+
+        Blender:
+            https://www.blender.org/
+            # blender uses a 3D polygon model and is targeted at animation, art and game design
+            # therfore a circle is not a circle but a set of polygons
+            # therefore it serves as alternative to Maya and 3ds Max
+            # however it has plugins to do parametric modelling similar to FreeCAD
+            # and it has a python API which can be used similar to OpenSCAD
+        
+            FreeCAD:
+                https://www.freecad.org/
+                # FreeCAD uses a 3D parametric model and is targeted at mechanical design
+                # therefore a circle is always a circle
+                # therfore it serves as alternative to Siemens Solid Edge and Fusion 360
+                # however it's a bit buggy and blender has plugins that allow doing precision
+        
+            LibreCAD:
+                https://librecad.org/
+                # LibreCAD uses a 2D parametric model
+                # because it's 2D it is fast, small and simple
+                
+            OpenSCAD:
+                https://openscad.org/
+                # OpenSCAD uses a parametric model and is targeted at mechanical design
+                # OpenSCAD is not an interactive GUI-driven software but rather a compiler
+                # a script defines a model
+                
+        Scribus:
+            https://www.scribus.net/
+        
+        OBS Studio
+            https://obsproject.com/
+            
+        Audacity
+            https://www.audacityteam.org/
+            
+    Programming Software:
+        Python 3:
+            https://www.python.org/
+
+        Java JDK:
+            https://www.oracle.com/technetwork/java/javase/downloads/index.html
+
+        Maven:
+            https://maven.apache.org/install.html
+
+        Nodejs:
+            https://nodejs.org/en/
+
+        GCC:
+            https://gcc.gnu.org/
+
+        GDB:
+            https://www.gnu.org/software/gdb/
+
+        Valgrind:
+            http://valgrind.org/
+
+        Git:
+            https://git-scm.com/
+
+        Visual Studio Code:
+            https://code.visualstudio.com/download
+            
+        neovim:
+            https://neovim.io/
+        
+        Haskell:
+            https://www.haskell.org
+            
+        Rust:
+            https://www.rust-lang.org
+
+        Julia:
+            https://julialang.org/
+
+    Acadamic Software:
+        Engauge digitizer:
+            https://github.com/markummitchell/engauge-digitizer
+
+        WebPlotDigitizer:
+            https://github.com/ankitrohatgi/WebPlotDigitizer
+
+        GPower:
+            http://www.gpower.hhu.de/
+
+        Language Proof and Logic (Frege (17.12, December 2017) which consists of: Boole 4.2.0, Fitch 3.7.0, Submit 3.1.0, and Tarski's World 7.2.4)
+            New Site:
+                https://proto.gradegrinder.net/Products/lpl-index.html
+            Old Site:
+                https://ggweb.gradegrinder.net/lpl/features
+
+        ACT-R:
+            http://act-r.psy.cmu.edu/software/
+
+        Nengo:
+            https://www.nengo.ai/
+
+        NLTK:
+            https://www.nltk.org/
+
+        R Project:
+            https://www.r-project.org/
+
+        R Studio:
+            https://www.rstudio.com/
+        
+        Radian. A better R console:
+            https://github.com/randy3k/radian 
+
+        JASP:
+            https://jasp-stats.org/
+
+        WolframAlpha:
+            https://www.wolframalpha.com/
+
+        GeoGebra:
+            https://www.geogebra.org/
+
+        Protégé:
+            New:
+            https://protege.stanford.edu/
+            Old:
+            https://protege.stanford.edu/download/protege/4.3/installanywhere/Web_Installers/
+        
+        Octave:
+            https://www.gnu.org/software/octave/download.html
+            
+        KiCad:
+            https://www.kicad.org/
+
+    Security Software:
+        Bitwarden:
+            https://bitwarden.com/
+
+
+## Zettelkasten Apps
+
+### Overview
 
 - Architecture after Luhmann's Zettelkasten.
     - The Zettelkasten method in [English](https://zettelkasten.de/posts/overview/).
@@ -10,6 +261,7 @@
     - A [Java](http://zettelkasten.danielluedecke.de/) implementation of the Zettelkasten with an old-school user interface.
     - [Neuron](https://github.com/srid/neuron), a Haskell implementation. Very cool project, also uses [Nix](https://nixos.org/) and [Matrix](https://matrix.org/). [Emanote](https://github.com/srid/emanote), a currently, seemingly, less popular successor to Neuron by the same author.
     - [Obsidian](https://obsidian.md/) is a proprietary, cross-platform, markdown-based note taking tool. With a focus on cross-references and building a knowledge graph it's similar to the Zettelkasten. Other similar proprietary apps are [Notion](https://www.notion.so/) (client is open source), [Roam Research](https://roamresearch.com/), [RemNote](https://www.remnote.com/) with support for flash cards.
+    - [Logseq](https://github.com/logseq/logseq) is an open source Obsidian clone. Markdown based format. Supports mobile and dekstop.
     - [AppFlowy.IO](https://github.com/AppFlowy-IO/appflowy) is a Notion clone. The tech stack is in Rust and Dart/Flutter. The project is in early development as of November 2021 but gaining popularity rapidly with over 8k stars on GitHub. The project is open source and AGPL-3 licensed. This could be the most promising project in the future. Due to Flutter multi platform comes per default.
     - [Foam](https://github.com/foambubble/foam) is a Roam based VSCode extension.
     - Don't allow linking to subsections of a Zettel. A Zettel should be atomic and KISS.
@@ -146,7 +398,7 @@
 - Feature: an ordered list by how incomplete notes seem
 - An example of powerful Obsidian usage is given by [Ryan Murphy](https://twitter.com/ryanjamurphy), a PhD in management. Ryan uses Obsidian on an iPad. ["How to Design Your Obsidian app as an Integrated Thinking Environment | LYT House Episode 5"](https://www.youtube.com/watch?v=fhkwEgGFOg8). More on [Fulcra](https://fulcra.design/tagged/projects), Ryan's project website. His use case is related to cybernetics and control theory, see [Stafford Beer](https://de.wikipedia.org/wiki/Stafford_Beer), see ["Cybernetic Revolutionaries"](https://mitpress.mit.edu/books/cybernetic-revolutionaries#:~:text=Summary-,A%20historical%20study%20of%20Chile's%20twin%20experiments%20with%20cybernetics%20and,one%20political%20and%20one%20technological.) by Eden Medina.
 
-## Conclusion 
+### Conclusion 
 
 Either make plugins for Joplin because it's open source and cross-platform. This gives independence to develop the features next to Joplin. Or use a script like [this](https://gitlab.com/annyong/baeuda) to generate flash cards. Do plugins work on mobile?
 
