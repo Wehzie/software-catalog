@@ -261,7 +261,7 @@
     - A [Java](http://zettelkasten.danielluedecke.de/) implementation of the Zettelkasten with an old-school user interface.
     - [Neuron](https://github.com/srid/neuron), a Haskell implementation. Very cool project, also uses [Nix](https://nixos.org/) and [Matrix](https://matrix.org/). [Emanote](https://github.com/srid/emanote), a currently, seemingly, less popular successor to Neuron by the same author.
     - [Obsidian](https://obsidian.md/) is a proprietary, cross-platform, markdown-based note taking tool. With a focus on cross-references and building a knowledge graph it's similar to the Zettelkasten. Other similar proprietary apps are [Notion](https://www.notion.so/) (client is open source), [Roam Research](https://roamresearch.com/), [RemNote](https://www.remnote.com/) with support for flash cards.
-    - [Logseq](https://github.com/logseq/logseq) is an open source Obsidian clone. Markdown based format. Supports mobile and dekstop.
+    - [Logseq](https://github.com/logseq/logseq) is an open source Obsidian clone. Markdown based format. Supports mobile and dekstop. Flash-cards are a baked in feature.
     - [AppFlowy.IO](https://github.com/AppFlowy-IO/appflowy) is a Notion clone. The tech stack is in Rust and Dart/Flutter. The project is in early development as of November 2021 but gaining popularity rapidly with over 8k stars on GitHub. The project is open source and AGPL-3 licensed. This could be the most promising project in the future. Due to Flutter multi platform comes per default.
     - [Foam](https://github.com/foambubble/foam) is a Roam based VSCode extension.
     - Don't allow linking to subsections of a Zettel. A Zettel should be atomic and KISS.
@@ -400,15 +400,9 @@
 
 ### Conclusion 
 
-Either make plugins for Joplin because it's open source and cross-platform. This gives independence to develop the features next to Joplin. Or use a script like [this](https://gitlab.com/annyong/baeuda) to generate flash cards. Do plugins work on mobile?
+When combining Obsidian and Ankia via the Obsidian to Anki plugin half of the problem is solved.
+Furthermore, an excalidraw plugin for Obsidian allows quite convenient drawing.
+Lastly, a chatbot plugin for obsidian allows the use of AI completions; this can be particularly useful for generating question-answer pairs from a document.
+Some improvements here could be achieved by extending existing plugins with pre-made prompts.
 
-Or extend Joplin, however it's unlikely that Joplin core would want all those features.
-
-Or use Obsidian because it looks so good and while it doesn't have flashcards.
-And extend Obsidian with a script to generate flashcards from the markdown files. However this is not truly cross-platform.
-
-Or make a new product. This is the only approach that can be taken to implement all functionality. However implementing all features is a mammoth task. Maybe forking Joplin is an option. A new product in Flutter/Dart would produce a prettier and faster mobile app. However Obsidian uses the JavaScript ecosystem and that app seems good.
-
-A key differentiation could be a free canvas environment similar to OneNote; however there is no good standard for this. Markdown by contrast is a clear standard.
-
-Or study for your exams.
+The only thing that would now warrant the development of a new note taking app, with so many options in the eco-system would be something that fully integrates AI, continuously reading all notes, making suggestions, preparing lessons, etc.
